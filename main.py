@@ -111,3 +111,27 @@ def run_strict_attack():
 
 if __name__ == "__main__":
     run_strict_attack()
+
+
+""" res:
+
+[Simulation] Generating Large Random Delta (Sim < 0.4 Scenario)...
+Sim of W_ft and W_base: 0.4173 (Expected to be low)
+
+[Signal] Delta Norm: 284.6178
+[Noise]  Mask D Norm:  29180.6465
+[Ratio]  Noise/Signal: 102.5257
+
+>> Running SVD Attack...
+
+[Spectrum Analysis] Top 10 Singular Values:
+[5459.59521484375, 5418.390625, 5400.14892578125, 5318.54296875, 5249.0634765625, 5201.1982421875, 5100.7099609375, 5077.2412109375, 5049.83251953125, 5019.4716796875]
+Value at rank 59: 1920.2369
+Value at rank 60:   8.9490
+Value at rank 61: 8.9107
+----------------------------------------
+Attack Results (Random Full-Rank Delta):
+Cosine Similarity (Recovered vs True): 0.984973
+Relative Error:    0.185986
+----------------------------------------
+"""
